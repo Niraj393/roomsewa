@@ -1,0 +1,246 @@
+/* assets/css/payment.css */
+
+/* Payment Container */
+.payment-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.payment-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: #333;
+}
+
+/* Payment Header */
+.payment-header {
+    background: linear-gradient(135deg, #3f37c9, #4cc9f0);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.payment-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Payment Details */
+.payment-details {
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.price {
+    color: #4a6bff;
+    font-weight: 600;
+}
+
+/* Payment Methods */
+.payment-methods {
+    padding: 1.5rem;
+}
+
+.method-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 0.8rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tab-btn.active {
+    color: #4a6bff;
+    border-bottom-color: #4a6bff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Payment Forms */
+.payment-form {
+    margin-top: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #4a6bff;
+    outline: none;
+}
+
+/* Payment Buttons */
+.pay-now-btn {
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.pay-now-btn {
+    background: #4a6bff;
+}
+
+.pay-now-btn:hover {
+    background: #3a5bef;
+}
+
+.khalti-btn {
+    background: #5C2D91;
+}
+
+.khalti-btn:hover {
+    background: #4a1d7a;
+}
+
+.esewa-btn {
+    background: #53A622;
+}
+
+.esewa-btn:hover {
+    background: #429511;
+}
+
+/* QR Payment */
+.qr-payment-method {
+    text-align: center;
+}
+
+.qr-code-container {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.qr-code-container img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0.5rem;
+}
+
+.or-divider {
+    position: relative;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #999;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: #ddd;
+}
+
+.or-divider::before {
+    left: 0;
+}
+
+.or-divider::after {
+    right: 0;
+}
+
+/* Payment Security */
+.payment-security {
+    padding: 1rem 1.5rem;
+    background: #f9f9f9;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+@media (max-width: 768px) {
+    .payment-container {
+        padding: 0.5rem;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .method-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
